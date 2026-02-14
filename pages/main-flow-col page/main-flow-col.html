@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegitable-Fruits</title>
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <style>
+        .home-screen {
+            padding-top: 100px;
+            width: 100%;
+        }
+        .main-carts {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 2rem 5%;
+        }
+        .carts {
+            flex: 1 1 300px;
+            max-width: 400px;
+            height: 550px;
+            text-align: center;
+            background-color: rgb(253, 238, 214);
+            font-size: 50px;
+            border-radius: 8px;
+            border: solid 1px white;
+            box-shadow: 0 5px 10px 5px gainsboro;
+            transition: 0.1s;
+            margin-bottom: 80px;
+        }
+        .heading{
+            text-align: center;
+            font-size: 30px;
+            margin: 30px 10px;
+            color: rgb(124, 4, 172);
+        }
+        .carts:hover {
+            transform: scale(1.05);
+        }
+
+        .carts-uppper-part {
+            height: 50%;
+        }
+
+        .cart-lower-part {
+            height: 52%;
+        }
+
+        .carts-img {
+            height: 95%;
+            width: 100%;
+        }
+
+        .carts-list {
+            justify-items: flex-start;
+            font-size: 40px;
+            text-align: center;
+            padding: 10px 0;
+            line-height: 1.1;
+            margin-top: 40px;
+        }
+
+        .carts-btn {
+            height: 40px;
+            width: 120px;
+            text-align: center;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(124, 4, 172);
+            color: white;
+            margin: 70px 125px;
+            cursor: pointer;
+            font-size: 17px;
+        }
+
+        /* large screens adjustments */
+    @media (min-width: 1200px) {
+      .heading h1 { font-size: 36px; }
+      .carts-uppper-part img { height: 340px; }
+    }
+
+    /* Tablets / small laptops */
+    @media (max-width: 1024px) {
+      .carts-uppper-part img { height: 300px; }
+      .carts-list { font-size: 24px; }
+      .heading h1 { font-size: 30px; }
+    }
+
+    /* Portrait tablets and large phones */
+    @media (max-width: 768px) {
+      .main-carts { gap: 1.25rem; padding: 1.5rem 4%; }
+      .carts { flex: 1 1 46%; max-width: 46%; min-width: 220px; }
+      .carts-uppper-part img { height: 240px; }
+      .carts-list { font-size: 22px; }
+      .heading h1 { font-size: 26px; }
+      .heading h4 { font-size: 16px; }
+    }
+
+    /* Small phones: single column */
+    @media (max-width: 480px) {
+      .home-screen { padding-top: 70px; }
+      .main-carts { flex-direction: column; padding: 1rem 3%; gap: 1rem; }
+      .carts { max-width: 100%; width: 100%; min-width: auto; }
+      .carts-uppper-part img { height: 180px; }
+      .carts-list { font-size: 20px; }
+      .carts-btn { width: 160px; font-size: 15px; }
+      .heading h1 { font-size: 20px; }
+      .heading h4 { font-size: 14px; }
+      footer { padding: 18px 3%; }
+    }
+
+    /* tiny phones */
+    @media (max-width: 360px) {
+      .carts-uppper-part img { height: 160px; }
+      .carts-list { font-size: 18px; }
+      .carts-btn { width: 140px; font-size: 14px; }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="../../image/logo.webp" class="logo-style">
+                <span>
+                    <p class="logo-name">EduFun Kids</p>
+                    <p>The Learning Platform</p>
+                </span>
+            </div>
+            <div class="pages">
+                <ul class="page-link">
+                    <li><a href="../home.html" class="page-link-a">Home</a></li>
+                    <li><a href="../spaceship/spaceship.html" class="page-link-a">Spaceship</a></li>
+                    <li><a href="../about.html" class="page-link-a">About</a></li>
+                    <li><a href="../../index.html" class="page-link-a">
+                            <p id="login-name">Log in</p>
+                        </a></li>
+                    <li><button class="page-link-btn" id="logout-btn">Logout</button></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="home-screen">
+            <div class="heading"">
+                <h1>Choose one to begin your fun learning adventure!” 🌟</h1>
+                <h4 style="font-size: 25px; margin: 20px;" >Pick your favorite - Flowers 🌹 or Colours 🔴 - and
+                    let's begin!</h4>
+            </div>
+            <div class="main-carts">
+            <div class="carts">
+                <div class="carts-uppper-part ">
+                    <img src="../../image/flower/flower_page.webp" class="carts-img ">
+                </div>
+                <div class="cart-lower-part">
+                    <h2 class="carts-list">🌹 Learn Flowers</h2>
+                    <button class="carts-btn" onclick="window.location.href='../../pages/main-flow-col page/t-flowers.html'">PLAY</button>
+                </div>
+            </div>
+            <div class="carts">
+                <div class="carts-uppper-part ">
+                    <img src="../../image/colour/colour_page.jpeg" class="carts-img">
+                </div>
+                <div class="cart-lower-part">
+                    <h2 class="carts-list">🔴 Learn Colours</h2>
+                    <button class="carts-btn" onclick="window.location.href='../../pages/main-flow-col page/t-colours.html'">PLAY</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+                <div class="footer-part">
+                    <div class="footer-sub-part">
+                        <h1>About EduFun Kids</h1><br>
+                        <p>We believe that learning should be fun, exciting, and full of adventure for every child. 
+                            Our website is designed to help kids explore, play, and grow while discovering new things every day.</p>
+
+                    </div>
+                    <div class="footer-sub-part">
+                        <h1>Quick Links</h1>
+                        <ul class="footer-links">
+                            <li class="footer-li"><a href="../home.html" class="footer-links-a">Home</a></li>
+                            <li class="footer-li"><a href="../spaceship/spaceship.html" class="footer-links-a">Spaceship</a></li>
+                            <li  class="footer-li"><a href="../about.html" class="footer-links-a">About</a></li>
+                         </ul>
+                    </div>
+                    <div class="footer-sub-part">
+                        <h1>Contact Us</h1>
+                        <ul class="footer-links">
+                            <li class="footer-li"><p>📞 Call us: <a href="tel:+912222500022" class="footer-links-a" >+91 2222500022</a></p></li>
+                            <li class="footer-li"><p>📧 Email us: <a href="mailto:edufun@example.com" class="footer-links-a">edufun@example.com</a></p></li>
+                        </ul>
+                    </div>
+                    <div class="footer-sub-part">
+                        <h1>Follw Us</h1>
+                        <ul class="footer-links">
+                        <li class="footer-li"><a href="https://www.facebook.com/" target="_blank" class="footer-links-a">📘 Facebook</a></li>
+                        <li class="footer-li"><a href="https://www.instagram.com/" target="_blank" class="footer-links-a">📸 Instagram</a></li>
+                        <li class="footer-li"><a href="https://twitter.com/" target="_blank" class="footer-links-a">🐦 Twitter</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </footer>
+    </div>
+    </div>
+</body>
+
+</html>

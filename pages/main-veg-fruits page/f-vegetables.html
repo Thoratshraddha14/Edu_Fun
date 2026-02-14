@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <style>
+        .home-screen {
+            padding-top: 100px;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            text-align: center;
+
+        }
+
+        h1 {
+            color: #333;
+            font-size: 70px;
+            margin-bottom: 40px;
+            margin-top: 30px;
+
+        }
+
+        .vegetable-img {
+            border: 3px solid #ccc;
+            border-radius: 10px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .options {
+            margin-top: 20px;
+        }
+
+        .options button {
+
+            width: 200px;
+            margin: 40px 10px;
+            padding: 10px;
+            font-size: 35px;
+            border: none;
+            border-radius: 8px;
+            background: rgb(124, 4, 172);
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .options button:hover {
+            background: rgb(124, 4, 172);
+        }
+
+        .options button:disabled {
+            cursor: not-allowed;
+        }
+
+        .result {
+            margin-top: 45px;
+            padding: auto;
+        }
+
+        .correct {
+            font-weight: bold;
+            font-size: 70px;
+            color: green;
+        }
+
+        .wrong {
+            font-weight: bold;
+            font-size: 70px;
+            color: red;
+        }
+
+        @media (max-width: 1024px) {
+            h1 {
+                font-size: 60px;
+            }
+
+            .vegetable-img {
+                width: 300px;
+                height: 300px;
+            }
+
+            .options button {
+                width: 180px;
+                font-size: 30px;
+                margin: 30px 8px;
+            }
+
+            .correct,
+            .wrong {
+                font-size: 60px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 50px;
+            }
+
+            .vegetable-img {
+                width: 250px;
+                height: 250px;
+            }
+
+            .options button {
+                width: 150px;
+                font-size: 25px;
+                margin: 25px 5px;
+            }
+
+            .correct,
+            .wrong {
+                font-size: 50px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 35px;
+            }
+
+            .vegetable-img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .options button {
+                width: 120px;
+                font-size: 20px;
+                margin: 20px 5px;
+            }
+
+            .correct,
+            .wrong {
+                font-size: 40px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            .vegetable-img {
+                width: 180px;
+                height: 180px;
+            }
+
+            .options button {
+                width: 100px;
+                font-size: 18px;
+                margin: 15px 3px;
+            }
+
+            .correct,
+            .wrong {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="../../image/logo.webp" class="logo-style">
+                <span>
+                    <p class="logo-name">EduFun Kids</p>
+                    <p>The Learning Platform</p>
+                </span>
+            </div>
+            <div class="pages">
+                <ul class="page-link">
+                    <li><a href="../home.html" class="page-link-a">Home</a></li>
+                    <li><a href="../spaceship/spaceship.html" class="page-link-a">Spaceship</a></li>
+                    <li><a href="../about.html" class="page-link-a">About</a></li>
+                    <li><a href="../../index.html" class="page-link-a">
+                            <p id="login-name">Log in</p>
+                        </a></li>
+                    <li><button class="page-link-btn" id="logout-btn">Logout</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="home-screen">
+            <h1>Vegetable Quiz</h1>
+            <img class="vegetable-img" id="vegetable-img" src="" width="350" height="350">
+            <div class="options" id="options"></div>
+            <p class="result" id="result"></p>
+        </div>
+    </div>
+    <script src="../../js/fruit-vegetable/f-vegetables.js"></script>
+</body>
+
+</html>

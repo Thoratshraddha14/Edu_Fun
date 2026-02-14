@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduFun</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+
+        .home-screen {
+            padding-top: 100px;
+            width: 100%;
+
+        }
+
+        .home-info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0 5%;
+        }
+
+        .header-name {
+            width: 60%;
+            font-size: 3.5rem;
+            color: rgb(124, 4, 172);
+        }
+
+        .header-img-name {
+            margin: 20px 25px;
+        }
+
+        .header-img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .header-title {
+            font-size: 70px;
+            margin: 0 65px;
+        }
+
+        .header-title-small {
+            font-size: 20px;
+            margin: 0 65px;
+        }
+
+        .main-carts {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 2rem 5%;
+        }
+
+        .carts {
+            flex: 1 1 300px;
+            max-width: 400px;
+            background-color: rgb(253, 238, 214);
+            font-size: 50px;
+            border-radius: 8px;
+            border: solid 1px white;
+            box-shadow: 0 5px 10px 5px gainsboro;
+            transition: 0.1s;
+
+        }
+
+        .carts:hover {
+            transform: scale(1.05);
+        }
+
+        .carts-uppper-part {
+            height: 50%;
+        }
+
+        .cart-lower-part {
+            height: 52%;
+        }
+
+        .carts-img {
+            height: 95%;
+            width: 100%;
+        }
+
+        .carts-list {
+            justify-items: flex-start;
+            font-size: 30px;
+            margin: 10px 40px;
+            padding: 10px 0;
+            line-height: 1.9;
+        }
+
+        .carts-btn {
+            height: 40px;
+            width: 120px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(124, 4, 172);
+            color: white;
+            margin: 50px 125px;
+            cursor: pointer;
+            font-size: 17px;
+        }
+
+        .quizzes {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 2rem 5%;
+            margin-right: 15%;
+            align-items: center;
+        }
+
+        .quizzes-part {
+            max-width: 600px;
+            font-size: 40px;
+        }
+
+        .quizzes-img {
+            width: 500px;
+            height: auto;
+            transition: transform 0.2s;
+        }
+
+        .quizzes-img:hover {
+            transform: scale(1.05);
+        }
+
+        .choose-us {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 2rem 7%;
+        }
+
+        .choose-us-part {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            flex: 1 1 500px;
+        }
+
+        .choose-us-img {
+            width: 800px;
+            border-radius: 12px;
+        }
+
+        .choose-us-img:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 1024px) {
+            .header-name h1 {
+                font-size: 3rem;
+            }
+
+            .header-img-name img {
+                width: 180px;
+            }
+
+            .header-title,
+            .header-title-small {
+                margin: 0 20px;
+            }
+
+            .carts {
+                max-width: 350px;
+                font-size: 45px;
+            }
+
+            .carts-list {
+                font-size: 28px;
+                margin: 10px 20px;
+            }
+
+            .carts-btn {
+                margin: 40px 90px;
+            }
+
+            .quizzes-part {
+                font-size: 35px;
+            }
+
+            .quizzes-img {
+                width: 400px;
+            }
+
+            .choose-us-part {
+                flex: 1 1 400px;
+            }
+
+            .choose-us-img img {
+                width: 700px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-name h1 {
+                font-size: 2.5rem;
+                text-align: center;
+            }
+
+            .header-img-name {
+                margin: 20px auto;
+                text-align: center;
+            }
+
+            .header-img-name img {
+                width: 150px;
+            }
+
+            .main-carts {
+                gap: 1rem;
+                padding: 1rem;
+            }
+
+            .carts {
+                flex: 1 1 90%;
+                max-width: 100%;
+                margin: 0 auto 2rem;
+                font-size: 35px;
+            }
+
+            .carts-list {
+                font-size: 22px;
+                margin: 10px 10px;
+            }
+
+            .carts-btn {
+                width: 100px;
+                margin: 30px auto;
+                display: block;
+            }
+
+            .quizzes {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .quizzes-img {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+
+            .quizzes-part {
+                font-size: 28px;
+            }
+
+            .choose-us {
+                flex-direction: column;
+                margin: 1rem 3%;
+            }
+
+            .choose-us-part {
+                flex: 1 1 100%;
+            }
+
+            .choose-us-img img {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-name h1 {
+                font-size: 2rem;
+            }
+
+            .header-img-name img {
+                width: 120px;
+            }
+
+            .carts {
+                font-size: 28px;
+            }
+
+            .carts-list {
+                font-size: 18px;
+                margin: 5px 5px;
+            }
+
+            .carts-btn {
+                width: 90px;
+                font-size: 14px;
+                margin: 20px auto;
+            }
+
+            .quizzes-part {
+                font-size: 22px;
+            }
+
+            .quizzes-img {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .header-name h1 {
+                font-size: 1.8rem;
+            }
+
+            .carts {
+                font-size: 24px;
+            }
+
+            .carts-list {
+                font-size: 16px;
+            }
+
+            .carts-btn {
+                width: 80px;
+                font-size: 12px;
+            }
+
+            .quizzes-part {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="../image/logo.webp" class="logo-style">
+                <span>
+                    <p class="logo-name">EduFun Kids</p>
+                    <p>The Learning Platform</p>
+                </span>
+            </div>
+            <div class="pages">
+                <ul class="page-link">
+                    <li><a href="./home.html" class="page-link-a">Home</a></li>
+                    <li><a href="./spaceship/spaceship.html" class="page-link-a">Spaceship</a></li>
+                    <li><a href="./about.html" class="page-link-a">About</a></li>
+                    <li><a href="../index.html" class="page-link-a">
+                            <p id="login-name">Log in</p>
+                        </a></li>
+                    <li><button class="page-link-btn" id="logout-btn">Logout</button></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="home-screen">
+            <div class="home-info">
+                <div class="header-name">
+                    <h1>🌟 Welcome to EduFun Kids 🌟</h1>
+                </div>
+                <div class="header-img-name">
+                    <img src="../image/logo.webp" class="header-img" id="headerimg">
+                    <!--<p class="header-title">EduFun</p>
+                    <p class="header-title-small">The Learning Platform</p>-->
+                </div>
+            </div>
+            <div class="main-carts">
+                <div class="carts">
+                    <div class="carts-uppper-part">
+                        <img src="../image/main-page-img/main-fruit-veg.jpeg" class="carts-img">
+                    </div>
+                    <div class="cart-lower-part">
+                        <ul class="carts-list">
+                            <li>VEGETABLES</li>
+                            <li>FRUITS</li>
+                        </ul>
+                        <button class="carts-btn"
+                            onclick="window.location.href='../pages/main-veg-fruits page/main-veg-fruits.html'">Let's
+                            Start</button>
+                    </div>
+                </div>
+                <div class="carts">
+                    <div class="carts-uppper-part">
+                        <img src="../image/main-page-img/main-ani-bird.avif" class="carts-img">
+                    </div>
+                    <div class="cart-lower-part">
+                        <ul class="carts-list">
+                            <li>ANIMALS</li>
+                            <li>BIRDS</li>
+                        </ul>
+                        <button class="carts-btn"
+                            onclick="window.location.href='../pages/main-ani-bird page/main-ani-bird.html'">Let's
+                            Start</button>
+                    </div>
+                </div>
+                <div class="carts">
+                    <div class="carts-uppper-part">
+                        <img src="../image/main-page-img/main-flow-col.jpg" class="carts-img">
+                    </div>
+                    <div class="cart-lower-part">
+                        <ul class="carts-list">
+                            <li>FLOWERS</li>
+                            <li>COLOURS</li>
+                        </ul>
+                        <button class="carts-btn"
+                            onclick="window.location.href='../pages/main-flow-col page/main-flow-col.html'">Let's
+                            Start</button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="quizzes">
+                <div>
+                    <img src="../image/mobile.webp" class="quizzes-img">
+                </div>
+                <div class="quizzes-part">
+                    <h2>🧠 How Quizzes Make Kids Smarter</h2>
+                    <ul style="list-style:none; font-size:27px; line-height:1.8;">
+                        <li>✅ Boosts Memory and Brain Power</li>
+                        <li>✅ Makes Learning Fun 🎉</li>
+                        <li>✅ Improves Thinking & Problem-Solving 🤔</li>
+                        <li>✅ Builds Confidence 🌟</li>
+                        <li>✅ Encourages Healthy Competition 🏆</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <br>
+            <h2 style="font-size: 50px; margin: 10px 7%;">🌟 Why Choose Us?</h2>
+            <div class="choose-us">
+                <div class="choose-us-part">
+                    <div>
+                        <div
+                            style="height: 100px; font-size:25px ; background:#e9e8fc; padding:20px;margin: 10px 20px; border-radius:12px;">
+                            <h3>🎉 Fun Learning</h3>
+                            <p>Games, quizzes & stories make learning exciting!</p>
+                        </div>
+
+                        <div
+                            style="height: 100px; font-size:25px;  background:#e0fff4; padding:20px;margin: 10px 20px; border-radius:12px;">
+                            <h3>👶 Safe & Friendly</h3>
+                            <p>A secure place designed just for kids.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            style="height: 100px; font-size:25px;  background:#f0f9ff; padding:20px;margin: 10px 20px; border-radius:12px;">
+                            <h3>🧠 Smart Growth</h3>
+                            <p>Boosts memory, problem-solving & confidence.</p>
+                        </div>
+
+                        <div
+                            style="height: 100px; font-size:25px;  background:#ffe0f0; padding:20px;margin: 10px 20px; border-radius:12px;">
+                            <h3>📚 Learn Anywhere</h3>
+                            <p>Easy on mobile, tablet and computer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose-us-img">
+                    <img src="../image/choose3.jpg">
+
+                </div>
+            </div>
+            <br>
+            <br>
+            <footer>
+                <div class="footer-part">
+                    <div class="footer-sub-part">
+                        <h1>About EduFun Kids</h1><br>
+                        <p>We believe that learning should be fun, exciting, and full of adventure for every child.
+                            Our website is designed to help kids explore, play, and grow while discovering new things
+                            every day.</p>
+
+                    </div>
+                    <div class="footer-sub-part">
+                        <h1>Quick Links</h1>
+                        <ul class="footer-links">
+                            <li class="footer-li"><a href="./home.html" class="footer-links-a">Home</a></li>
+                            <li class="footer-li"><a href="./spaceship/spaceship.html"
+                                    class="footer-links-a">Spaceship</a></li>
+                            <li class="footer-li"><a href="./about.html" class="footer-links-a">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-sub-part">
+                        <h1>Contact Us</h1>
+                        <ul class="footer-links">
+                            <li class="footer-li">
+                                <p>📞 Call us: <a href="tel:+912222500022" class="footer-links-a">+91 2222500022</a></p>
+                            </li>
+                            <li class="footer-li">
+                                <p>📧 Email us: <a href="mailto:edufun@example.com"
+                                        class="footer-links-a">edufun@example.com</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-sub-part">
+                        <h1>Follw Us</h1>
+                        <ul class="footer-links">
+                            <li class="footer-li"><a href="https://www.facebook.com/" target="_blank"
+                                    class="footer-links-a">📘 Facebook</a></li>
+                            <li class="footer-li"><a href="https://www.instagram.com/" target="_blank"
+                                    class="footer-links-a">📸 Instagram</a></li>
+                            <li class="footer-li"><a href="https://twitter.com/" target="_blank"
+                                    class="footer-links-a">🐦 Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+
+
+        </div>
+    </div>
+    <script src="../js/home.js">
+
+
+    </script>
+</body>
+
+</html>

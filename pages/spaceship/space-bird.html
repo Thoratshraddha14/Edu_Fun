@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits Learning</title>
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <style>
+        .home-screen {
+            padding-top: 100px;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .main-container1 {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .main-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 9rem;
+            padding: 2rem 0;
+        }
+
+        .sub-box {
+            flex: 1 1 400px;
+            max-width: 380px;
+            border-radius: 12px;
+            border: 1px solid white;
+            box-shadow: 0 5px 10px 5px gainsboro;
+            transition: 0.2s;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .sub-box img {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            padding: auto;
+            margin: 10px 20px;
+        }
+
+        .sub-box p {
+            margin-top: 10px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .sub-box:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 1024px) {
+      .main-box {
+        gap: 5rem;
+      }
+
+      .sub-box img {
+        width: 250px;
+        height: 250px;
+      }
+
+      .sub-box p {
+        font-size: 25px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .main-box {
+        gap: 3rem;
+      }
+
+      .sub-box img {
+        width: 200px;
+        height: 200px;
+      }
+
+      .sub-box p {
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .main-box {
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .sub-box img {
+        width: 180px;
+        height: 180px;
+        margin: 10px auto;
+      }
+
+      .sub-box p {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .sub-box img {
+        width: 150px;
+        height: 150px;
+      }
+
+      .sub-box p {
+        font-size: 18px;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="../../image/logo.webp" class="logo-style">
+                <span>
+                    <p class="logo-name">EduFun Kids</p>
+                    <p>The Learning Platform</p>
+                </span>
+            </div>
+            <div class="pages">
+                <ul class="page-link">
+                    <li><a href="../home.html" class="page-link-a">Home</a></li>
+                    <li><a href="../spaceship/spaceship.html" class="page-link-a">Spaceship</a></li>
+                    <li><a href="../about.html" class="page-link-a">About</a></li>
+                    <li><a href="../../index.html" class="page-link-a">
+                            <p id="login-name">Log in</p>
+                        </a></li>
+                    <li><button class="page-link-btn" id="logout-btn">Logout</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="home-screen">
+            <div class="main-container1">
+                <h1 style="font-size: 60px; ">BIRDS</h1>
+                <div class="main-box" id="bird-container">
+
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="../../js/spaceships/space-bird.js"></script>
+</body>
+
+</html>

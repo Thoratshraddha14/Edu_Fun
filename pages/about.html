@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | EduFun Kids</title>
+  <link rel="stylesheet" href="../css/navbar.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #fdfdfd;
+      color: #333;
+    }
+
+    .home-screen {
+      padding-top: 100px;
+      width: 100%;
+      font-family: Arial, sans-serif;
+      text-align: center;
+
+    }
+
+    .about-container {
+      max-width: 90%;
+      margin: 20px auto 50px;
+      padding: 20px;
+      margin-bottom: 150px;
+    }
+
+    .about-h1 {
+      text-align: center;
+      font-size: 50px;
+      color: rgb(124, 4, 172);
+      margin-bottom: 20px;
+    }
+
+    .about-h2 {
+      color: rgb(81, 20, 105);
+      margin-top: 28px;
+      font-size: 50px;
+    }
+
+    .para {
+      font-size: 30px;
+      margin: 10px 0;
+    }
+
+    .ul-list {
+      margin: 10px 0 20px 40%;
+      line-height: 1.9;
+      justify-items: flex-start;
+    }
+
+    .li-list {
+      margin-bottom: 8px;
+      font-size: 25px;
+
+    }
+
+    .highlight {
+      background: rgb(151, 68, 184);
+      border: 6px solid rgb(125, 7, 172);
+      padding: 2px;
+      margin: 40px 0;
+      border-radius: 10px 1px 10px 1px;
+      font-style: italic;
+      color: white;
+    }
+
+    @media (max-width: 1024px) {
+    .about-h1 {
+      font-size: 45px;
+    }
+    .about-h2 {
+      font-size: 40px;
+    }
+    .para {
+      font-size: 25px;
+    }
+    .ul-list {
+      margin-left: 30%;
+    }
+    .li-list {
+      font-size: 22px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .about-h1 {
+      font-size: 40px;
+    }
+    .about-h2 {
+      font-size: 35px;
+    }
+    .para {
+      font-size: 22px;
+    }
+    .ul-list {
+      margin-left: 20%;
+    }
+    .li-list {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .about-h1 {
+      font-size: 30px;
+    }
+    .about-h2 {
+      font-size: 28px;
+    }
+    .para {
+      font-size: 18px;
+    }
+    .ul-list {
+      margin-left: 10%;
+    }
+    .li-list {
+      font-size: 16px;
+    }
+    .highlight {
+      font-size: 16px;
+      padding: 5px;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .about-h1 {
+      font-size: 25px;
+    }
+    .about-h2 {
+      font-size: 22px;
+    }
+    .para {
+      font-size: 16px;
+    }
+    .ul-list {
+      margin-left: 5%;
+    }
+    .li-list {
+      font-size: 14px;
+    }
+    .highlight {
+      font-size: 14px;
+      padding: 4px;
+    }
+  }
+  </style>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="navbar">
+      <div class="logo">
+        <img src="../image/logo.webp" class="logo-style">
+        <span>
+          <p class="logo-name">EduFun Kids</p>
+          <p>The Learning Platform</p>
+        </span>
+      </div>
+      <div class="pages">
+        <ul class="page-link">
+          <li><a href="../pages/home.html" class="page-link-a">Home</a></li>
+          <li><a href="../pages/spaceship/spaceship.html" class="page-link-a">Spaceship</a></li>
+          <li><a href="about.html" class="page-link-a">About</a></li>
+          <li><a href="../index.html" class="page-link-a">
+              <p id="login-name">Log in</p>
+            </a></li>
+          <li><button class="page-link-btn" id="logout-btn">Logout</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="home-screen">
+      <div class="about-container">
+        <h1 class="about-h1">🌈 Welcome to EduFun Kids 🌈</h1>
+        <p class="para">
+          At EduFun Kids, we believe that <strong>learning should feel like play</strong>.
+          Our platform is built for curious young minds who want to explore the world around them.
+        </p>
+
+        <div class="highlight">
+          <p class="para">📖 <strong>Our Vision:</strong> Inspire children to learn with joy, creativity, and
+            imagination.</p>
+        </div>
+
+        <h2 class="about-h2">🚀 What Makes Us Special</h2>
+        <ul class="ul-list">
+          <li class="li-list">Interactive flashcards and games</li>
+          <li class="li-list">Exciting quizzes that test knowledge</li>
+          <li class="li-list">Playful themes like fruits, animals, and colors</li>
+          <li class="li-list">Safe design, made just for kids</li>
+        </ul>
+
+        <h2 class="about-h2">🌟 Learning Categories</h2>
+        <p class="para">EduFun Kids introduces children to a variety of topics:</p>
+        <ul class="ul-list">
+          <li class="li-list">🍎 Fruits & 🥦 Vegetables</li>
+          <li class="li-list">🐯 Animals & 🐦 Birds</li>
+          <li class="li-list">🌸 Flowers & 🎨 Colors</li>
+        </ul>
+
+        <h2 class="about-h2">👩‍🏫 For Families and Teachers</h2>
+        <p class="para">
+          Whether at home or in the classroom, EduFun Kids provides a
+          <strong>fun and reliable resource</strong> for early learning.
+          Parents can use it to guide kids, while teachers can make lessons interactive.
+        </p>
+
+        <h2 class="about-h2">💖 Our Promise</h2>
+        <p class="para">
+          We are committed to creating a <em>positive first step in education</em>.
+          Every child deserves the chance to enjoy learning and grow with confidence!
+        </p>
+      </div>
+      <footer>
+                <div class="footer-part">
+                    <div class="footer-sub-part">
+                        <h1>About EduFun Kids</h1><br>
+                        <p>We believe that learning should be fun, exciting, and full of adventure for every child. 
+                            Our website is designed to help kids explore, play, and grow while discovering new things every day.</p>
+
+                    </div>
+                    <div class="footer-sub-part">
+                        <h1>Quick Links</h1>
+                        <ul class="footer-links">
+                            <li class="footer-li"><a href="../pages/home.html" class="footer-links-a">Home</a></li>
+                            <li class="footer-li"><a href="../pages/spaceship/spaceship.html" class="footer-links-a">Spaceship</a></li>
+                            <li  class="footer-li"><a href="about.html" class="footer-links-a">About</a></li>
+                         </ul>
+                    </div>
+                    <div class="footer-sub-part">
+                        <h1>Contact Us</h1>
+                        <ul class="footer-links">
+                            <li class="footer-li"><p>📞 Call us: <a href="tel:+912222500022" class="footer-links-a" >+91 2222500022</a></p></li>
+                            <li class="footer-li"><p>📧 Email us: <a href="mailto:edufun@example.com" class="footer-links-a">edufun@example.com</a></p></li>
+                        </ul>
+                    </div>
+                    <div class="footer-sub-part">
+                        <h1>Follw Us</h1>
+                        <ul class="footer-links">
+                        <li class="footer-li"><a href="https://www.facebook.com/" target="_blank" class="footer-links-a">📘 Facebook</a></li>
+                        <li class="footer-li"><a href="https://www.instagram.com/" target="_blank" class="footer-links-a">📸 Instagram</a></li>
+                        <li class="footer-li"><a href="https://twitter.com/" target="_blank" class="footer-links-a">🐦 Twitter</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </footer>
+    </div>
+  </div>
+  <script src="../js/home.js">
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <style>
+        .home-screen {
+            padding-top: 100px;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .main-box {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 8rem;
+            padding: 1rem 8%;
+            margin-bottom: 120px;
+        }
+
+        .sub-box {
+            flex: 1 1 200px;
+            max-width: 450px;
+            background-color: rgb(253, 238, 214);
+            font-size: 50px;
+            border-radius: 8px;
+            border: solid 1px white;
+            box-shadow: 0 5px 10px 5px gainsboro;
+            transition: 0.1s;
+            text-align: center;
+            
+            padding: 20px 1px;
+        }
+        h2{
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+        .space-img{
+            height: 250px;
+            width: 300px;
+        }
+
+        .sub-box:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .btn {
+            height: 50px;
+            width: 180px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(124, 4, 172);
+            color: white;
+            margin: 10px 120px;
+            cursor: pointer;
+            font-size: 17px;
+
+        }
+
+        @media (max-width: 1024px) {
+      .main-box {
+        gap: 5rem;
+      }
+
+      .sub-box img {
+        width: 250px;
+        height: 250px;
+      }
+
+      .sub-box p {
+        font-size: 25px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .main-box {
+        gap: 3rem;
+      }
+
+      .sub-box img {
+        width: 200px;
+        height: 200px;
+      }
+
+      .sub-box p {
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .main-box {
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .sub-box img {
+        width: 180px;
+        height: 180px;
+        margin: 10px auto;
+      }
+
+      .sub-box p {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .sub-box img {
+        width: 150px;
+        height: 150px;
+      }
+
+      .sub-box p {
+        font-size: 18px;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="../../image/logo.webp" class="logo-style">
+                <span>
+                    <p class="logo-name">EduFun Kids</p>
+                    <p>The Learning Platform</p>
+                </span>
+            </div>
+            <div class="pages">
+                <ul class="page-link">
+                    <li><a href="../home.html" class="page-link-a">Home</a></li>
+                    <li><a href="spaceship.html" class="page-link-a">Spaceship</a></li>
+                    <li><a href="../about.html" class="page-link-a">About</a></li>
+                    <li><a href="../../index.html" class="page-link-a">
+                            <p id="login-name">Log in</p>
+                        </a></li>
+                    <li><button class="page-link-btn" id="logout-btn">Logout</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="home-screen">
+            <div class="main-box">
+                <div class="sub-box">
+                    <h2>🍎 Fruits</h2>
+                    <img  class="space-img" src="../../image/spaceship/space-fruits.webp">
+                    <button class="btn" onclick="window.location.href='../spaceship/space-fruit.html'">Explore Fruits</button>
+                </div>
+
+                <div class="sub-box">
+                    <h2>🥕 Vegetables</h2>
+                    <img  class="space-img" src="../../image/spaceship/space-vegetable.jpg">
+                    <button class="btn" onclick="window.location.href='../spaceship/space-vegetable.html'">Explore Vegetables</button>
+                </div>
+
+                <div class="sub-box">
+                    <h2>🐶 Animals</h2>
+                    <img  class="space-img" src="../../image/spaceship/space-animal.jpg">
+                    <button class="btn" onclick="window.location.href='../spaceship/space-animal.html'">Explore Animals</button>
+                </div>
+
+                <div class="sub-box">
+                    <h2>🦜 Birds</h2>
+                    <img  class="space-img" src="../../image/spaceship/space-bird1.jpg">
+                    <button class="btn" onclick="window.location.href='../spaceship/space-bird.html'">Explore Birds</button>
+                </div>
+
+                <div class="sub-box">
+                    <h2>🌹 Flowers</h2>
+                    <img  class="space-img" src="../../image/spaceship/space-flower.jpg">
+                    <button class="btn" onclick="window.location.href='../spaceship/space-flower.html'">Explore Flowers</button>
+                </div>
+
+                <div class="sub-box">
+                    <h2>🎨 Colors</h2>
+                    <img  class="space-img" src="../../image/spaceship/space-color.webp">
+                    <button class="btn" onclick="window.location.href='../spaceship/space-colour.html'">Explore Colors</button>
+                </div>
+            </div>
+            <footer>
+                <div class="footer-part">
+                    <div class="footer-sub-part">
+                        <h1>About EduFun Kids</h1><br>
+                        <p>We believe that learning should be fun, exciting, and full of adventure for every child. 
+                            Our website is designed to help kids explore, play, and grow while discovering new things every day.</p>
+
+                    </div>
+                    <div class="footer-sub-part">
+                        <h1>Quick Links</h1>
+                        <ul class="footer-links">
+                            <li class="footer-li"><a href="../home.html" class="footer-links-a">Home</a></li>
+                            <li class="footer-li"><a href="spaceship.html" class="footer-links-a">Spaceship</a></li>
+                            <li  class="footer-li"><a href="../about.html" class="footer-links-a">About</a></li>
+                         </ul>
+                    </div>
+                    <div class="footer-sub-part">
+                        <h1>Contact Us</h1>
+                        <ul class="footer-links">
+                            <li class="footer-li"><p>📞 Call us: <a href="tel:+912222500022" class="footer-links-a" >+91 2222500022</a></p></li>
+                            <li class="footer-li"><p>📧 Email us: <a href="mailto:edufun@example.com" class="footer-links-a">edufun@example.com</a></p></li>
+                        </ul>
+                    </div>
+                    <div class="footer-sub-part">
+                        <h1>Follw Us</h1>
+                        <ul class="footer-links">
+                        <li class="footer-li"><a href="https://www.facebook.com" target="_blank" class="footer-links-a">📘 Facebook</a></li>
+                        <li class="footer-li"><a href="https://www.instagram.com" target="_blank" class="footer-links-a">📸 Instagram</a></li>
+                        <li class="footer-li"><a href="https://twitter.com" target="_blank" class="footer-links-a">🐦 Twitter</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
